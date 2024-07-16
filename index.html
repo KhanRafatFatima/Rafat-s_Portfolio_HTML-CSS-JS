@@ -105,6 +105,13 @@
 
         }
 
+        .skills-section {
+            max-width: 80vw;
+            margin: 5px 69px;
+            height: 40vh;
+
+        }
+
 
 
         .text-gray {
@@ -119,7 +126,7 @@
         }
 
         .secondSection h1,
-        .thirdSection h1 {
+        .thirdSection h1, .skills-section h1 {
             font-size: 1.4rem;
             color: #94a0a9;
             font-weight: 500;
@@ -144,6 +151,10 @@
             margin: 25px -7px;
         }
 
+        .fourthSection h1 {
+            margin: 25px -7px;
+        }
+
         .remove_bullet {
             padding: 0;
             list-style: none;
@@ -159,6 +170,36 @@
         .text_bolder {
             font-weight: 600;
         }
+
+        .skills-section {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .skills-section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills-list li {
+            background-color: #352020;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #603b3b;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 150px;
+            text-align: center;
+        }
+        .skills-list li:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
     </style>
 </head>
 
@@ -170,7 +211,7 @@
                 <ul>
                     <li><a href="#aboutt">About</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="/">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="/">Resume</a></li>
                     <li><a href="/">Contact</a></li>
                 </ul>
@@ -298,6 +339,27 @@
 
 
         </section>
+
+        <section id="skills" class="skills-section">
+
+            
+                <h1>My Skills</h1>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                </ul>
+            
+            
+        </section>
+               
+   
 
 
         <!-- <hr> -->
