@@ -61,7 +61,7 @@
             margin: -51px;
         }
 
-        .rightSection{
+        .rightSection {
             margin: -125px;
         }
 
@@ -87,12 +87,25 @@
             color: rgb(116, 96, 135);
         }
 
+        .nameOfDegree {
+            /* text-align: center; */
+        }
+
         .secondSection {
             max-width: 80vw;
             margin: 68px;
             height: 80vh;
             /* text-align: center; */
         }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: 5px 69px;
+            height: 110vh;
+
+        }
+
+
 
         .text-gray {
             color: gray;
@@ -105,7 +118,8 @@
             margin: 40px 0;
         }
 
-        .secondSection h1 {
+        .secondSection h1,
+        .thirdSection h1 {
             font-size: 1.4rem;
             color: #94a0a9;
             font-weight: 500;
@@ -115,15 +129,35 @@
 
         .leftSectionTwo img {
             margin: 42px 57px 24px -12px;
-    height: 93%;
-    width: 34%;
+            height: 93%;
+            width: 34%;
         }
 
-        .rightSection p{
+        .rightSection p {
             margin: -419px 0 66px 652px;
             color: #739973;
             font-size: larger;
-    height: fit-content;
+            height: fit-content;
+        }
+
+        .leftSectionThird h1 {
+            margin: 25px -7px;
+        }
+
+        .remove_bullet {
+            padding: 0;
+            list-style: none;
+            color: #518976;
+            text-decoration: solid;
+            font-family: system-ui;
+
+        }
+
+
+        /* make font bold */
+
+        .text_bolder {
+            font-weight: 600;
         }
     </style>
 </head>
@@ -135,7 +169,7 @@
             <div class="right">
                 <ul>
                     <li><a href="#aboutt">About</a></li>
-                    <li><a href="/">Education</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="/">Resume</a></li>
                     <li><a href="/">Contact</a></li>
@@ -156,19 +190,111 @@
             </div>
         </section>
 
-        <section id="aboutt" class="secondSection" >
+        <section id="aboutt" class="secondSection">
             <div class="leftSectionTwo">
                 <h1>About</h1>
                 <img src="pic_1.png" alt="">
             </div>
 
             <div class="rightSection">
-             <p>I am a passionate and driven aspiring Java Backend Developer with a solid foundation in object-oriented programming and Java development. <br><br>Currently interning as a Backend Java Developer, I am proficient in leveraging the Spring Framework and REST APIs to build scalable and efficient applications. My journey in software development began during my college years, where I actively participated in competitive programming and honed my problem-solving skills.
-                <br><br>
-                Beyond coding, I have a keen interest in teaching , which I fostered during my high school years through mentorship roles. This experience has instilled in me a strong sense of communication and the ability to simplify complex concepts.
-                <br><br>
-                I thrive in dynamic environments where I can continuously learn and apply new technologies to innovate and solve real-world challenges. I am eager to contribute my skills and enthusiasm to a team committed to delivering high-quality software solutions.</p>
+                <p>I am a passionate and driven aspiring Java Backend Developer with a solid foundation in
+                    object-oriented programming and Java development. <br><br>Currently interning as a Backend Java
+                    Developer, I am proficient in leveraging the Spring Framework and REST APIs to build scalable and
+                    efficient applications. My journey in software development began during my college years, where I
+                    actively participated in competitive programming and honed my problem-solving skills.
+                    <br><br>
+                    Beyond coding, I have a keen interest in teaching , which I fostered during my high school years
+                    through mentorship roles. This experience has instilled in me a strong sense of communication and
+                    the ability to simplify complex concepts.
+                    <br><br>
+                    I thrive in dynamic environments where I can continuously learn and apply new technologies to
+                    innovate and solve real-world challenges. I am eager to contribute my skills and enthusiasm to a
+                    team committed to delivering high-quality software solutions.
+                </p>
             </div>
+
+
+        </section>
+
+        <section id="education" class="thirdSection">
+            <div class="leftSectionThird">
+                <h1>Education</h1>
+            </div>
+
+            <div class="square">
+
+                <ul class="remove_bullet">
+                    <li class="text_bolder">
+                        Master of Computer Application
+                    </li>
+                    <li style="font-weight: lighter;">
+                        Shri Ramdeobaba College of Engineering & Management,Nagpur
+                    </li>
+                    <li class="text_bolder">
+                        CGPA: 8.7
+                    </li>
+                    <li style="font-weight: lighter;">
+                        Nov 2022 - May 2024
+                    </li>
+                </ul>
+
+                <hr>
+
+                <ul class="remove_bullet">
+                    <li class="text_bolder">
+                        Bachelor of Science in Computer Science, Mathematics & Physics
+                    </li>
+                    <li style="font-weight: lighter;">
+                        Rashtrasant Tukadoji Maharaj Nagpur University
+                    </li>
+                    <li class="text_bolder">
+                        Percentage : 75.04%
+                    </li>
+                    <li style="font-weight: lighter;">
+                        Aug 2018 - July 2021
+                    </li>
+                </ul>
+
+                <hr>
+
+                <ul class="remove_bullet">
+                    <li class="text_bolder">
+                        Higher Secondary School Education
+                    </li>
+                    <li style="font-weight: lighter;">
+                        Dhote bandhu Science College,Gondia
+                    </li>
+                    <li style="font-weight: lighter;">
+                        PCBM
+                    </li>
+                    <li class="text_bolder">
+                        Percentage : 85.23% 
+                    </li>
+                    <li style="font-weight: lighter;">
+                        April 2017 - March 2018
+                    </li>
+                </ul>
+
+                <hr>
+
+                <ul class="remove_bullet">
+                    <li class="text_bolder">
+                        Secondary School Education
+                    </li>
+                    <li style="font-weight: lighter;">
+                        Rajasthan Kanya Vidyalaya,Gondia
+                    </li>
+                    <li class="text_bolder">
+                        Percentage : 80.00% 
+                    </li>
+                    <li style="font-weight: lighter;">
+                        April 2015 - March 2016
+                    </li>
+                </ul>
+
+            </div>
+            </div>
+
 
 
         </section>
