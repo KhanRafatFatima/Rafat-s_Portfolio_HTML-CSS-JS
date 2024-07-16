@@ -66,7 +66,7 @@
         }
 
         .leftSection div {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
 
         .leftSection button {
@@ -93,7 +93,7 @@
 
         .secondSection {
             max-width: 80vw;
-            margin: 68px;
+            margin: 80px;
             height: 80vh;
             /* text-align: center; */
         }
@@ -112,6 +112,13 @@
 
         }
 
+        .Achievements-section{
+            max-width: 80vw;
+            margin: 5px 69px;
+            height: 100vh;
+
+        }
+
 
 
         .text-gray {
@@ -126,9 +133,11 @@
         }
 
         .secondSection h1,
-        .thirdSection h1, .skills-section h1 {
+        .thirdSection h1,
+        .skills-section h1, 
+        .Achievements-section h1{
             font-size: 1.4rem;
-            color: #94a0a9;
+            color: #90a8ba;
             font-weight: 500;
             font-family: 'Courier New', Courier, monospace;
         }
@@ -173,13 +182,15 @@
 
         .skills-section {
             width: 80%;
-            margin: 50px auto;
+            margin: 65px auto;
             text-align: center;
         }
+
         .skills-section h2 {
             margin-bottom: 20px;
             color: #333;
         }
+
         .skills-list {
             list-style: none;
             padding: 0;
@@ -187,18 +198,43 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+
         .skills-list li {
             background-color: #352020;
             margin: 10px;
-            padding: 20px;
+            /* padding: 20px; */
             border: 1px solid #603b3b;
             border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             width: 150px;
             text-align: center;
+
+            /* margin: 10px; */
+            padding: 10px 20px;
+            background-color: #627a6338;
+            color: #9687d7;
+            /* border: hidden; */
+            cursor: pointer;
+            font-size: 1rem;
         }
+
         .skills-list li:hover {
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background-color: #4d275a;
+        }
+
+        .margin_bottom{
+            color: #518976;
+        }
+
+        .heading{
+            margin-right: -9px;
+    font-size: unset;
+    font-family: math;
+    color: antiquewhite;
+        }
+        .head{
+            color:antiquewhite;
+            font-family: math;
         }
     </style>
 </head>
@@ -212,8 +248,9 @@
                     <li><a href="#aboutt">About</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="/">Resume</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="#achiev">Achievements</a></li>
+                    <li><a href="#certi">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -221,8 +258,8 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                <div>Hi, I am <span class="purple">Rafatfatima Khan</span></div>
-                <div>Java Backend Developer @EBOS</div>
+                <div class="head">Hi, I am <span class="purple">Rafatfatima Khan</span></div>
+                <div class="heading">Java Backend Developer @EBOS</div>
                 <div>
                     <button onclick="window.location.href='path/to/resume.pdf'">Resume</button>
                     <button onclick="window.location.href='mailto:rafatkhan9797@gmail.com'">Get in Touch</button>
@@ -309,7 +346,7 @@
                         PCBM
                     </li>
                     <li class="text_bolder">
-                        Percentage : 85.23% 
+                        Percentage : 85.23%
                     </li>
                     <li style="font-weight: lighter;">
                         April 2017 - March 2018
@@ -326,7 +363,7 @@
                         Rajasthan Kanya Vidyalaya,Gondia
                     </li>
                     <li class="text_bolder">
-                        Percentage : 80.00% 
+                        Percentage : 80.00%
                     </li>
                     <li style="font-weight: lighter;">
                         April 2015 - March 2016
@@ -342,32 +379,107 @@
 
         <section id="skills" class="skills-section">
 
-            
-                <h1>My Skills</h1>
-                <ul class="skills-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>SQL</li>
-                    <li>Git</li>
-                </ul>
-            
-            
+
+            <h1>My Skills</h1>
+            <ul class="skills-list">
+                <li>Java</li>
+                <li>OOP</li>
+                <li>MySQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Spring Boot</li>
+                <li>Hibernate</li>
+                <li>Git</li>
+            </ul>
+
+
         </section>
-               
-   
 
 
-        <!-- <hr> -->
+        <section id="achiev" class="Achievements-section">
+          
+          <h1>Achievements</h1>
+    
+                <ul style="list-style: square; padding-right: 15px;">
+    
+                    <!-- <li class="margin_bottom">
+                        Peak rating 1807 (4 ⭐) at Codechef
+                    </li>
+    
+                    <hr class="style-two"> -->
+    
+                    <li class="margin_bottom">
+                        Global Rank 156 out of 20730 coders in May 2020 Long Challenge Codechef Division 2
+                    </li>
+    
+                    <hr class="style-two">
+    
+                    <li class="margin_bottom">
+                        Rank 4 in GeeksForGeeks Institute wise Leaderboard
+                    </li>
+    
+                    <hr class="style-two">
+    
+                    <li class="margin_bottom">
+                        Ranked 3 in Codantine Coding Contest – Organized by DJCSI College
+                    </li>
+    
+                    <!-- <hr class="style-two"> -->
+    
+                    <!-- <li class="margin_bottom">
+                        Peak rating 1486 at HackerEarth
+                    </li> -->
+    
+                    <hr class="style-two">
+                    
+                    <li class="margin_bottom">
+                        All India Rank 3829 in Pre-Qualifier Round of TCS Codevita 2020 out of 0.185 million participants
+                    </li>
+    
+                    <!-- <hr class="style-two"> -->
+    
+                    <!-- <li class="margin_bottom">
+                        TechGig Code Gladiators 2020 Semi-Finalist
+                    </li> -->
+                    
+                    <!-- <hr class="style-two">
+    
+                    <li class="margin_bottom">
+                        Qualified the Qualifier Round of Facebook Hacker Cup 2020
+                    </li> -->
+    
+                    <hr class="style-two">
+                    
+                    <li class="margin_bottom">
+                        HackerRank : Golden Badge (5 ⭐) in Java & Silver Badge (4 ⭐) in Problem Solving
+                    </li>
+    
+                    <hr class="style-two">
+    
+                    <li class="margin_bottom">
+                         Awarded SHE Scholarship from Maharashtra Govt. for Being a meritorious Student
+                    </li>
+    
+                </ul>
+    
+            </div>
+    
+        </section>
+    
+    
+       
+    
 
-        <!-- <section class="secondSection">
-            <h1>Work Experience</h1>
-            <div class="box"></div>
-        </section> -->
+
+
+    
+
+
+
+
+
+
+
     </main>
     <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
