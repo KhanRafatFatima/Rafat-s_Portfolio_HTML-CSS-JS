@@ -61,6 +61,10 @@
             margin: -51px;
         }
 
+        .rightSection{
+            margin: -125px;
+        }
+
         .leftSection div {
             margin-bottom: 20px;
         }
@@ -76,7 +80,7 @@
         }
 
         .leftSection button:hover {
-            background-color: #45a049;
+            background-color: #4d275a;
         }
 
         .purple {
@@ -104,13 +108,22 @@
         .secondSection h1 {
             font-size: 1.4rem;
             color: #94a0a9;
+            font-weight: 500;
+            font-family: 'Courier New', Courier, monospace;
         }
 
-        .secondSection .box {
-            background: white;
-            width: 80vw;
-            height: 2px;
-            margin: 56px auto;
+
+        .leftSectionTwo img {
+            margin: 42px 57px 24px -12px;
+    height: 93%;
+    width: 34%;
+        }
+
+        .rightSection p{
+            margin: -419px 0 66px 652px;
+            color: #739973;
+            font-size: larger;
+    height: fit-content;
         }
     </style>
 </head>
@@ -121,7 +134,7 @@
             <div class="left">Rafat's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">About</a></li>
+                    <li><a href="#aboutt">About</a></li>
                     <li><a href="/">Education</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="/">Resume</a></li>
@@ -137,14 +150,25 @@
                 <div>Java Backend Developer @EBOS</div>
                 <div>
                     <button onclick="window.location.href='path/to/resume.pdf'">Resume</button>
-                    <button onclick="window.location.href='mailto:your-email@example.com'">Get in Touch</button>
+                    <button onclick="window.location.href='mailto:rafatkhan9797@gmail.com'">Get in Touch</button>
                 </div>
                 <!-- <span id="element"></span> -->
             </div>
         </section>
 
-        <section  class="secondSection">
-               <h1>About</h1>
+        <section id="aboutt" class="secondSection" >
+            <div class="leftSectionTwo">
+                <h1>About</h1>
+                <img src="pic_1.png" alt="">
+            </div>
+
+            <div class="rightSection">
+             <p>I am a passionate and driven aspiring Java Backend Developer with a solid foundation in object-oriented programming and Java development. <br><br>Currently interning as a Backend Java Developer, I am proficient in leveraging the Spring Framework and REST APIs to build scalable and efficient applications. My journey in software development began during my college years, where I actively participated in competitive programming and honed my problem-solving skills.
+                <br><br>
+                Beyond coding, I have a keen interest in teaching , which I fostered during my high school years through mentorship roles. This experience has instilled in me a strong sense of communication and the ability to simplify complex concepts.
+                <br><br>
+                I thrive in dynamic environments where I can continuously learn and apply new technologies to innovate and solve real-world challenges. I am eager to contribute my skills and enthusiasm to a team committed to delivering high-quality software solutions.</p>
+            </div>
 
 
         </section>
